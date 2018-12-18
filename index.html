@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Static Template</title>
+<script type="text/javascript" src="js/jquery.min.js">
+
+</script>
+<script type="text/javascript" src="js/snowfall.jquery.js">
+
+</script>
+	<style type="text/css">
+		.snowfall-flakes {
+			animation: sakura 1s linear 0s infinite;
+		}
+
+		@keyframes sakura {
+			0% {
+				transform: rotate3d(0, 0, 0, 0deg);
+			}
+			25% {
+				transform: rotate3d(1,
+				1, 0, 60deg);
+			}
+			50% {
+				transform: rotate3d(1, 1, 0, 0deg);
+			}
+			75% {
+				transform: rotate3d(1, 0, 0, 60deg);
+			}
+			100% {
+				transform: rotate3d(1,
+				0, 0, 0deg);
+			}
+		}
+
+		body {
+			position: relative;
+			overflow: hidden;
+		}
+
+		td {
+			/* border: 1px solid black; */
+			width: 50px;
+			height: 50px;
+			text-align: center;
+		}
+
+		table {
+			display: inline;
+			margin-right: 40px
+		}
+
+		.zp {
+			width: 100%;
+			text-align: center;
+			margin-top: 100px
+		}
+
+		.zppic {
+			display: inline-block;
+			max-width: 50px;
+			max-height: 50px;
+		}
+
+		.zppic img {
+			width: 100%;
+		}
+
+		.bigpic {
+			position: absolute;
+			overflow: hidden;
+			z-index: 99;
+		}
+
+		.bigpic img {
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="zp">
+		<div>
+			<table>
+				<tr>
+					<td>
+						<div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td></td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                      </table>
+                  
+                      <table style="margin-top:50px">
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                      </table>
+                  
+                      <table style="margin-top:50px">
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>   
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                      </table>
+                  
+                      <table style="margin-top:50px">
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                      </table>
+                  
+                      <table style="margin-top:50px">
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+          </div>
+          <div style="margin-top:80px">
+                <table>
+                        <tr>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td></td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                          <td>
+                            <div class="zppic"><img src="images/1.jpg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                      </table>
+                <table style="margin-top:50px">
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                          <td><div class="zppic"><img src="images/1.jpg" /></div></td>
+                        </tr>
+                      </table>
+          </div>
+      </div>
+    
+
+      <div class="bigpic" style="display: none;">
+            <img class="bigimg" />
+        </div>
+  </body>
+
+    <script>
+        function Showbigimg() {
+            var rom = parseInt(73 * Math.random());
+
+            var imgurl = $(".zppic:eq(" + rom + ")").find("img").attr("src");
+            $(".bigimg").attr({ "src": imgurl });
+
+            var bwidth = $(".bigimg").width();
+            var bheight = $(".bigimg").height();
+            var o = { left: "50%", width: "800px", height: "600px", top: "100px", "margin-left": "-400px" };
+
+            var pic = $(".zppic:eq(" + rom + ")");
+            $(".bigpic").css({ "left": pic.position().left, "top": pic.position().top });
+            $(".bigpic").show();
+
+            $(".bigpic").animate(o, 2000, function () {
+                setTimeout(function () {
+                    $(".bigpic").animate({ width: "100px", left: pic.position().left, top: pic.position().top, "margin-left": "0", "margin-top": "0" }, 1000, function () {
+                        $(".bigpic").hide();
+                        setTimeout(Showbigimg, 1000);
+                    });
+                }, 3000)
+            });
+        }
+		 $(document).ready(function(){ $(document).snowfall({image:"./js/img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+		$(document).snowfall({image:"./js/img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,}); $(document).snowfall({image:"./js/img/2.png",
+		flakeCount:20, minSpeed:1, minSize:8, maxSize:15,}); $(document).snowfall({image:"./js/img/4.png", flakeCount:20, minSpeed:1,
+		minSize:8, maxSize:15,}); });
+        $(function () {
+            Showbigimg();         
+
+        })
+    </script>
+</html>
